@@ -1,77 +1,90 @@
----
-layout: page
-main_image_path: /assets/header4.jpg
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Annie Houston - Graphic Design</title>
+<meta name="description" content="Annie Houston - Graphic Design   Online portfolio of London based freelance graphic designer, illustrator and artworker, Annie Houston., Annie Houston" /> 
+<meta name="author" content="Eye Division" />
+<meta name="copyright" content="Copyright (c) Annie Houston" />
+<meta http-equiv="expires" content="-1" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="styles/blueprint/screen.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="styles/artist.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="styles/blueprint/print.css" type="text/css" media="print" /> 
+<!--[if IE]>
+  <link rel="stylesheet" href="/styles/blueprint/ie.css" type="text/css" media="screen, projection" />
+<![endif]-->
 
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-      <div class="post-categories">
-      {% if post.categories.size > 0 %}in {% for cat in post.categories %}
-        {% if site.jekyll-archives %}
-        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% else %}
-        <span>{{ cat | capitalize }}</span>{% if forloop.last == false %}, {% endif %}
-        {% endif %}
-      {% endfor %}{% endif %}
-      </div>
-    </section>
-  </li>
-  {% if forloop.last == false %}
-  <hr>
-  {% endif %}
-  {% endfor %}
-</ul>
+<script language="JavaScript1.1" src="code/formvalidate.js" type="text/javascript"></script>
+    <script type="text/javascript" src="code/swfobject.js"></script>
+    <script type="text/javascript">
+    var flashvars = {};
+          flashvars.width     		  = '740';
+          flashvars.height     		  = '400';
+          flashvars.file              = '/save_mysql_playlist.php';
+          flashvars.transition		  = 'fade';
+          flashvars.overstretch  	  = 'false';	/* false, true, fit, none  */
+          flashvars.rotatetime 		  = '4';
+          flashvars.repeat 			  = 'true';
+          flashvars.frontcolor		  = '0xFFFFFF';
+          flashvars.lightcolor		  = '0xFFFFFF';
+          flashvars.screencolor		  = '0xFFFFFF';
+          flashvars.backcolor		  = '0x666666';
+          flashvars.linkfromdisplay   = 'true';
+          flashvars.autostart		  = 'true';
+          flashvars.shownavigation	  = 'false';
+          flashvars.searchbar		  = 'false';
+          flashvars.shuffle			  = 'true';
+      var params = {};
+          params.allowscriptaccess    = 'always';
+      var attributes = {};
+    swfobject.embedSWF("/code/imagerotator.swf", "player", "740", "400", "7.0.0", "/code/expressInstall.swf", flashvars, params, attributes);
+    </script>
+    <script type="text/javascript">
 
-<nav class="pagination" role="navigation">
-  <p>
-    {% if paginator.next_page %}
-    <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-    {% else %}
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-    </span>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-      <a class="newer-posts" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-      {% else %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-      {% endif %}
-    {% else %}
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-    </span>
-    {% endif %}
-  </p>
-  <p>
-    <a href="{{ site.baseurl }}/posts">View All Posts by Category</a>
-  </p>
-</nav>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16735011-5']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>	
+<body>
+<div class="header">
+	<h1><a href="index.html" title="Return home" accesskey="1">Annie Houston</a></h1>
+
+    <ul class="nav">
+    <li><a href="thumbs.php%3Fcat=22.html" title="View 23 thumbnail images for Print">Print</a></li><li><a href="thumbs.php%3Fcat=24.html" title="View 9 thumbnail images for Identity">Identity</a></li><li><a href="thumbs.php%3Fcat=25.html" title="View 19 thumbnail images for Illustration - General">Illustration - General</a></li><li><a href="thumbs.php%3Fcat=21.html" title="View 41 thumbnail images for Illustration - T-Shirts">Illustration - T-Shirts</a></li><li><a href="thumbs.php%3Fcat=23.html" title="View 43 thumbnail images for Fashion">Fashion</a></li><li><a href="thumbs.php%3Fcat=26.html" title="Contact">Contact</a></li>    </ul>
+    </div><!-- end header -->
+	<div class="main">
+		<div class="container">  
+            <div class="subnav"></div>
+        <div id="page"><p align="center"><p><span style="font-size: x-large;">Hi. </span>I&rsquo;m Annie Houston, a London-based graphic designer.</p><br />
+<p><span style="font-size: x-large;">Welcome &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>to my online portfolio.<br /><br />
+I specialise in design for print, and generally work from conception to production on any given job: from mocking up scamps to creating print-ready artwork.<br /><br />
+I am a born perfectionist, with a keen eye for detail and a love of colour and typography. <br /><br />
+I&rsquo;m a freelancer who enjoys working collaboratively, as part of a team as well as working solo and taking the lead on projects.<br /><br />
+<span style="font-size: large;">I&rsquo;d love to meet your design needs. &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Get in touch if you&rsquo;d like to know my rates or have any other queries.<br /><br />
+<span style="font-size: large;">Enjoy your visit.</span></p></p></div><div class="gallery"></div><div id="playercontainer">
+    <div id="player">
+    <p><a href="http://www.adobe.com/go/getflashplayer"><img alt="Get Adobe Flash player" src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" /></a></p>
+    </div>
+</div>
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="span-24 email">&#105;&#110;&#102;&#111;&#64;&#97;&#110;&#110;&#105;&#101;&#104;&#111;&#117;&#115;&#116;&#111;&#110;&#46;&#99;&#111;&#46;&#117;&#107; &nbsp;&nbsp;07973 909 759<br /></div>
+        
+        <div class="span-24 small prepend-top">&copy; All work is copyright the artist, no reproduction without permission.  An <a href="http://www.eyedivision.com" title="Site by Eye Division" target="_blank">Eye Gallery</a> site <a href="http://www.eyedivision.com" title="An Eye Gallery system site" target="_blank"><img src="images/eyegallery-box-trans.png" alt="an Eye Gallery site" width="30" height="31" /></a></div>
+    </div>
+</div>
+		
+	</body>
+    </html>
+	
